@@ -19,7 +19,7 @@ function expand_retr_fields(ex) {
             }, 251);
         })()
 
-        fields.animate([{ opacity: 1 }], { duration: 250, fill: "forwards" })
+        fields.animate([{ opacity: 0 }], { duration: 250, fill: "forwards" })
     }
 }
 
@@ -33,5 +33,5 @@ for (const x of [...document.getElementsByClassName("signinb")]) {
 }
 
 document.getElementById("signin_input").getElementsByTagName("button")[0].addEventListener("click", ()=>{
-    
+    expand_retr_fields()
 })
