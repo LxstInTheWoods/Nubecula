@@ -27,13 +27,22 @@
 
         </div>
         <div id="signin">
-            <button class="signinb" id="customer" style="margin-right: 0.2em;">Customer</button>
-            <button class="signinb" id="staff" style="margin-left: 0.2em;">Staff</button>
+            <span id="signincs" style="display: flex;">
+                <button class="signinb" id="customer" style="margin-right: 0.2em;">Customer</button>
+                <button class="signinb" id="staff" style="margin-left: 0.2em;">Staff</button>
+            </span>
+            <hr id="focussp">
+            <div id="signin_input">
+                <input placeholder="Username">
+                <input placeholder="Password">
+                <button>Submit</button>
+            </div>
         </div>
 
     </section>
     <iframe id="logframe" style="border: none;"></iframe>
     <script src="./js/index.js"></script>
+    <script src="./js/indextheme.js"></script>
 </body>
 
 </html>
