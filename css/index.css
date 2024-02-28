@@ -1,5 +1,8 @@
 body {
     background-color: #222628;
+    overflow-y: hidden;
+    overflow-x: 0;
+    margin: 0;
 }
 
 body * {
@@ -37,15 +40,13 @@ section {
 
 #signin {
     display: flex;
-    width: 50%;
+    width: fit-content;
     margin: auto;
     margin-top: 0.5em;
 }
 
 #signin button {
-    display: block;
     background-color: #222628;
-    width: 25%;
     padding: 0.5em;
     border: solid #FFFFFF;
     border-radius: 9px;
@@ -53,4 +54,18 @@ section {
     font-weight: bold;
     font-size: 20px;
     border-width: 3px;
+    display: inline-block;
+    width: 150px; 
+    box-sizing: border-box; 
+}
+#logframe {
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    top: 0;
+    transform: translateY(-100%);
+}
+#prototype{
+    position: absolute;
+    background-color: white;
 }
