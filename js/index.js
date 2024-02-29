@@ -10,6 +10,7 @@ function expand_retr_fields(ex) {
         hr.animate([{ width: "100%" }], { duration: 250, fill: "forwards" })
 
         fields.animate([{ opacity: 1 }], { duration: 250, fill: "forwards" })
+        
     }
     else {
         (async () => {
@@ -27,11 +28,14 @@ for (const x of [...document.getElementsByClassName("signinb")]) {
     x.addEventListener("click", () => {
         logframe.src = `./${x.id}.html`
         expand_retr_fields(true)
-        //logframe.animate([{transform:"translateY(0%)"}], {duration:350, fill:"forwards"})
+
 
     })
 }
 
 document.getElementById("signin_input").getElementsByTagName("button")[0].addEventListener("click", ()=>{
     expand_retr_fields()
+    setTimeout(() => {
+        logframe.animate([{transform:"translateY(0%)"}], {duration:350, fill:"forwards"})
+    }, 255);
 })
