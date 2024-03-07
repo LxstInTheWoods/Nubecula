@@ -1,3 +1,102 @@
 body{
     background-color: #2b2f31;
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+#orders{
+    height: 99.8vh;
+    width: 20%;
+    border: solid white;
+    padding-top: 0.3em;
+    overflow-y: scroll;
+}
+.ordercard{
+    width: 80%;
+    border: solid white;
+    margin: auto;
+    background-color:#222628;
+    border-radius: 9px;
+    border-color:#6904f7 ;
+    border-width: 3px;
+    padding: 0.3em;
+    padding-left: 0.3em;
+}
+.ordercard h1, h4, h5{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ordercard h5{
+    color: #99aab4;
+}
+#main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+#yourchannels{
+    flex: 1;
+    border: solid white;
+    height: 7%;
+    overflow-x: scroll;
+    display: flex;
+    padding-left: 0.3em;
+}
+.channelcard{
+    border-radius: 9px;
+    background-color:#222628;
+    border: solid #99aab4 ;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.2em;
+    margin: auto;
+    margin-right: 0.3em;
+    margin-left: 0;
+
+}
+.channelcard h1{
+    width:fit-content;
+    padding: 0.1em;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+#channels_chat{
+    height: 100vh;
+    flex: 1;
+    display: block;
+}
+#chat{
+    display: flex;
+    border: solid white;
+    height: 92.7%;
+    padding: 0.5em;
+}
+
+.messagecard{
+    min-width: 10%;
+    width:fit-content;
+    background-color: #222628;
+    height: fit-content;
+    border-radius: 9px;
+    border: solid #99aab4;
+    padding: 0.3em;
+    display: flex;
+    
+}
+
+.messagecard img{
+    border-radius: 999999px;
+    height: 3em;
+}
+.messagecard p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: auto;
+    margin-left: 0.2em;
+    height: fit-content;
+    width: fit-content;
 }
