@@ -1,6 +1,6 @@
 function Purpletextfade(pass, color){
     const text = pass.innerText;
-      pass.innerHTML = ""; // Clear the original text
+      pass.innerHTML = ""; 
     
       for (let i = 0; i < text.length; i++) {
         const span = document.createElement('span');
@@ -16,12 +16,12 @@ function Purpletextfade(pass, color){
         } else {
           clearInterval(intervalId);
         }
-      }, 10); // Adjust the interval duration as needed
+      }, 10); 
     
       function fadeToPurple(element) {
         let opacity = 0;
         const step = 0.1;
-        const duration = 500; // Adjust the duration as needed
+        const duration = 500;
         const interval = setInterval(() => {
           if (opacity < 1) {
             opacity += step;
