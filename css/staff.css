@@ -9,6 +9,9 @@ body{
     width: 20%;
     padding-top: 0.3em;
     overflow-y: scroll;
+    border: solid #99aab4;
+    border-radius: 9px;
+    margin-left: 0.3em;
 }
 .ordercard{
     width: 80%;
@@ -41,6 +44,9 @@ body{
     overflow-x: scroll;
     display: flex;
     padding-left: 0.3em;
+    border: solid #99aab4;
+    border-radius: 9px;
+    margin-bottom: 0.25em;
 }
 .channelcard{
     border-radius: 9px;
@@ -68,9 +74,11 @@ body{
 }
 #chat{
     display: block;
-    height: 92.7%;
+    height: 90%;
     padding: 0.5em;
     overflow-y: scroll;
+    border: solid #99aab4;
+    border-radius: 9px;
 }
 
 .messagecard{
@@ -82,6 +90,7 @@ body{
     border: solid #99aab4;
     padding: 0.3em;
     display: block;
+    margin-bottom: .3em;
     
 }
 

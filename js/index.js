@@ -1,7 +1,5 @@
 const logframe = document.getElementById("logframe")
 logframe.src = "./staff.html"
-var endpoint = 'https://api.terminalsaturn.com:444';
-
 
 function expand_retr_fields(ex) {
     const hr = document.getElementById("focussp")
@@ -11,7 +9,7 @@ function expand_retr_fields(ex) {
         hr.animate([{ width: "100%" }], { duration: 250, fill: "forwards" })
 
         fields.animate([{ opacity: 1 }], { duration: 250, fill: "forwards" })
-        
+
     }
     else {
         (async () => {
@@ -34,32 +32,9 @@ for (const x of [...document.getElementsByClassName("signinb")]) {
     })
 }
 
-document.getElementById("signin_input").getElementsByTagName("button")[0].addEventListener("click", ()=>{
+document.getElementById("signin_input").getElementsByTagName("button")[0].addEventListener("click", () => {
     expand_retr_fields()
     setTimeout(() => {
-        logframe.animate([{transform:"translateY(0%)"}], {duration:350, fill:"forwards"})
+        logframe.animate([{ transform: "translateY(0%)" }], { duration: 350, fill: "forwards" })
     }, 255);
 })
-
-fetch(`${endpoint}/newTicket`, {
-    method: 'POST',
-    mode: 'cors',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-        data:"Hello"
-    }) 
-}).then(response => {
-    if (!response.ok) {
-        r4('Server error: ' + response.status)
-    }
-    return response.json();
-})
-    .then(data => {
-        alert(data.value)
-
-    })
-    .catch(error => {
-        r4("ERROR: " + error)
-    });
